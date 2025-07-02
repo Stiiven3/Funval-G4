@@ -1,0 +1,40 @@
+
+.Image{
+    
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+}
+
+.B{
+    font-size:25px ;
+}
+.SBIEN{
+
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    color: #fff;
+    padding: 2%;
+}
+h3,h2{
+    color: #5045c6;
+    font-size: 25px;
+}
+.Orde{
+
+    color: #d14563;
+}
+
+.Mi{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
