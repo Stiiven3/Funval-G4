@@ -1,0 +1,95 @@
+/*1-Crea una div de 200x200px con fondo celeste. 
+Agrega padding: 20px y coloca un texto dentro. Observar cómo se separa el texto del borde.*/
+
+.Caja{
+    
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background: turquoise;
+
+}
+
+/*2-Crea dos div de color diferente. Asigna margin: 30px al segundo. Verifica cómo se separan entre ellas.*/
+
+.margen2{
+
+    margin: 30px;
+}
+
+/*3-Crea dos cajas idénticas con fondo. A una dale margin: 20px y a la otra padding: 20px. ¿Qué diferencias ves?*/
+
+.primera{
+
+    margin: 20px;
+}
+.segunda{
+
+    padding: 20px;
+}
+
+/*La diferencia que veo es que  al poner el padding en la segunda  este  ajusta el tama;o que es equiparable al margin*/
+
+
+/*4-Crea una caja con border: 5px solid red en la parte superior, 3px dashed green a la derecha, etc. Usa los 4 lados diferentes.*/
+
+.lados{
+    
+    width: 50%;
+    border-top: 5px solid red ;
+    border-left: 3px solid green;
+    border-bottom: 5px solid saddlebrown;
+    border-right: 10px solid slateblue;
+
+}
+
+/*5-Crea una caja de 300px de ancho centrada horizontalmente en pantalla usando margin: 0 auto.*/
+
+.Caja25{
+
+width: 300px;
+margin: 0 auto;
+
+}
+
+/*6-Crea una caja de 200x200px, agrégale padding: 40px y un borde de 4px solid black. Añade texto dentro.*/
+
+.ejercicio6{
+
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    border:4px solid black;
+}
+
+/*7-Crea 3 cajas horizontales (en línea). Usa display: inline-block y margin-right: 10px para separarlas.*/
+
+/*8-Diseña una tarjeta con padding: 20px, border: 2px solid gray, y border-radius: 10px. Agrega un título y párrafo dentro.*/
+
+/*9-Haz un div con fondo azul, texto blanco, padding: 10px 20px, borde redondeado y cursor: pointer. Que se vea como botón.*/
+
+/*10-Crear una Alerta Visual
+ Crea una caja que represente una alerta (como un mensaje de advertencia).*/
+
+body{
+
+    margin: 120px 35px;
+}
+
+
+ img{
+
+    width: 50px;
+    height: 50px;
+ }
+
+ .card{
+  
+    width: 40%;
+    background-color: brown;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+ }

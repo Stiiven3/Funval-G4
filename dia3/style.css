@@ -1,0 +1,51 @@
+.btn{
+
+    border: 4px solid red;
+    padding: 60px;
+    
+}
+
+div{
+
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 20px;
+}
+
+
+/*Maquetado*/
+
+body{
+
+   margin-top: 250px;
+}
+
+
+.control-box{
+ background: blue;
+    margin: 20px 15px 20px 10px;
+    padding: 60px;
+
+    display: flex;
+    justify-content: center;
+
+    
+
+    
+}
+
+.box,.box2{
+    
+  width: 100%;
+  background-color: aqua;
+  padding: 60px;
+
+}
+
+.titulo{
+  
+    display: flex;
+    
+    
+}
