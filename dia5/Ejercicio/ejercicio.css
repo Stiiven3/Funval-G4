@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+header{
+    text-align: center;
+    background-color: green;
+}
+main{
+
+    margin: 50px;
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+.Container{
+
+    display: flex;
+    gap: 25px;
+  
+}
+
+.caja{
+
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    background-color:  brown;
+}
+
+footer{
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+
+}
+.F{
+
+    width: 500px;
+    height: 50px;
+    background-color: yellow;
+}
+
+
+
+
+

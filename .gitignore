@@ -1,0 +1,7 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos de salida de Tailwind (opcional)
+*.output.css
+output.css
+dia6/output.css
