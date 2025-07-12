@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="todo" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="h-screen flex items-center justify-center flex-col dark:bg-slate-900">
+
+    <div class="bg-amber-100 text-black  dark:bg-gray-950 dark:text-white w-56 h-44 flex items-center justify-center">
+        Hola mundo
+    </div>
+    <button id="btn" class="mt-10 cursor-pointer lig hover:bg-amber-300 bg-blue-400 px-4 py-2 rounded">Cambia la caja</button>
+
+    <script>
+        let botonCambio = document.querySelector("#btn");
+        let todo = document.querySelector("#todo");
+        botonCambio.addEventListener("click", function() {
+        todo.classList.toggle("dark");
+        });
+        
+    </script>
+    
+</body>
+</html>
