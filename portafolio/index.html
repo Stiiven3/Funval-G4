@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Steven Orozco</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./output.css">
-
-
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./output.css" />
 </head>
-<body class="bg-gray-900">
+<body class="bg-gray-900" >
 
   <!-- Header -->
-<header class="flex justify-between items-center px-6 py-4 bg-gray-800">
-  <div class="text-white text-xl font-semibold">Logo</div>
-  <nav class="hidden lg:block">
-    <ul class="flex space-x-6 text-white font-display text-lg hi ">
-      <li class="hover:bg-green-700 lg:p-5 h-full rounded-3xl"><a href="#inicio" class="hover:underline">Inicio</a></li>
-      <li class="hover:bg-green-700 lg:p-5 rounded-3xl"><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
-      <li class="hover:bg-green-700 lg:p-5 rounded-3xl"><a href="#proyectos" class="hover:underline">Proyectos</a></li>
-      <li class="hover:bg-green-700 lg:p-5 rounded-3xl"><a href="#contacto" class="hover:underline">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="flex justify-between items-center px-4 sm:px-6 py-4 bg-gray-800">
+    <div class="text-white text-lg sm:text-xl font-semibold">Logo</div>
+    <nav class="hidden lg:block">
+      <ul class="flex space-x-4 sm:space-x-6 text-white font-display text-base sm:text-lg">
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#inicio" class="hover:underline">Inicio</a></li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#sobre-mi" class="hover:underline">Sobre mí</a></li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#proyectos" class="hover:underline">Proyectos</a></li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#contacto" class="hover:underline">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main>
+  <!-- Hero Section -->
+  <main >
+    <section class="min-h-screen bg-[url(./fin.png)] bg-cover bg-center flex items-center justify-center px-4">
+      <div class="w-full max-w-3xl flex flex-col items-center justify-center gap-4 text-center">
+        <div class="bg-gray-900/80 text-white font-display text-lg sm:text-2xl lg:text-4xl p-4 rounded">
+          <h1>Hola, Soy Steven Orozco 👋</h1>
+          <p>Desarrollador WEB</p>
+          <div class="mt-4 w-full">
+            <img class=  " mx-auto h-auto w-10 lg:w-15 animate-bounce" src="./bmo-bounce.gif" alt="bmo bouncing" />
+          </div>
+        </div>
+        <div class="mt-4">
+          <button class="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-600 font-display">Descargar CV</button>
+        </div>
+      </div>
+    </section>
 
-      
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="w-full mt-8 px-4">
+      <div class="text-center font-display text-3xl sm:text-4xl lg:text-5xl text-white border-4 border-yellow-600 p-4">
+        <h2>Sobre mí</h2>
+      </div>
 
-        <section class=":h-96 lg:h-screen bg-[url(./fin.png)] bg-cover bg-center  ">
-
-             <div class="w-75 h-full lg:w-[800px]  flex flex-col items-center justify-center gap-1 lg:gap-3   ">
-
-                <div class=" w-60 lg:w-lg text-center text-xl font-display lg:text-4xl bg-gray-900/80 text-white mt-36 flex flex-col gap-3 p-4 ">
-                     <h1 class=" ">Hola,Soy Steven Orozco 👋</h1>
-                     <p>Desarrollador WEB</p> 
-
-                     <div class=" mx-auto">
-
-                        <img  class="h-auto w-10 flex flex-row" src="./bmo-bounce.gif" alt="">
-
-                     </div>
-                     
-                     
-                </div>
-
-                <div class="box-button w-50  text-center   ">
-                    <div class="button cursor-pointer  font-display"><button class=" ">Descargar CV</button></div>
-                </div>
-
-                 
-             </div>
-        </section>
-
+      <div class="w-full flex flex-col md:flex-row justify-center items-center md:items-stretch mt-8 gap-6">
         
+        <!-- Imagen -->
+        <div class="w-full max-w-sm flex justify-center md:justify-end">
+          <img onclick="PlayAudio()" class=" cursor-pointer w-80 h-auto md:h-full md:max-h-[300px] object-cover rounded-md mx-auto md:mx-0" src="./d5b63acb-a72b-49fd-a944-25f49369b3d2.png" alt="Steven retrato" />
+        </div>
 
-        <section class="bg-gray-900 w-full flex flex-col  mt-8" >
+        <!-- Texto -->
+        <div class="bg-gray-950 text-green-400 font-display text-base sm:text-lg lg:text-2xl border-4 border-green-500 p-4 w-full max-w-2xl rounded flex md:h-[300px]">
+          <div class="my-auto">
+            <p class="leading-relaxed">
+              Soy estudiante de la Licenciatura en Informática, apasionado por la programación . También soy artista plástico; si quieres 
+              ver algunas de mis obras, haz clic aquí:
+              <a href="https://www.instagram.com/stiiwarsog/" class="inline-block ml-1 text-white hover:text-green-400">
+                <svg class="inline w-6 h-6 lg:w-8 lg:h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
 
-           
-            <div class="text-center font-display text-4xl lg:text-5xl text-white w-full border-4 border-yellow-600 p-4">
+       <h3 class="text-white text-3xl text-center mt-5 font-display">Habilidades</h3>
+      <div class=" text-white flex flex-row items-center  ">
 
-                 <h2 >Sobre mi</h2>
-
-
-            </div>
-                     
-
-            <div class="w-full  flex flex-col md:flex-row sm:justify-center sm:items-center xs:items-center mt-8 gap-3">
+         <img class="w-40 " src="./Luffy.png " alt="">
 
 
-                
-                <div class="   border-blue-300 font-[Pixelify Sans]   ">
-                    <img class="sm-w-80  w-96 h-full  cursor-pointer lg:h-auto" src="./d5b63acb-a72b-49fd-a944-25f49369b3d2.png"  alt="">
-                </div>
-                <div class=" bg-gray-950 lg:text-4xl border-4 sm:w-full  w-full lg:h-[300px] md:h-[200px] border-green-500 rounded-none p-2 text-green-400   ">
-                    <p class="leading-relaxed">Soy estudiante de la Licenciatura en Informática, apasionado por la programación y los videojuegos. También soy artista plástico; si quieres 
-                      ver algunas de mis obras, haz clic aquí: <a href="https://www.instagram.com/stiiwarsog/"><svg class=" inline  sm:w-6 h-6 lg:w-8 lg:h-8 text-white    dark:bg-green-700 "  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
-</svg>
-</i></a>  </p>
-                </div>
-
+         <div class="text-2xl text-center mt-4 w-full grid grid-cols-5 size-20 place-items-center  " >
              
-            </div>
-               
-
-        </section>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-25 shadow-lg shadow-cyan-500/80  lg:animate-bounce  md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto" src="./Img/html5.png" alt=""></div>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-25 shadow-lg shadow-cyan-500/80 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto" src="./Img/cssCirculo.webp" alt=""> </div>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto" src="./Img//tailwind.png" alt=""></div>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto" src="./Img/git.png" alt=""></div>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-25 shadow-lg shadow-cyan-500/80 lg:animate-bounce md:animate-pulse"></div>
+           
+         </div>
+    </section>
+lg:
+    <audio class="hidden"  controls loop id="musica">
+      <source src="./Img/Mi Corazon Encantado Dragon Ball GT Remix,Sin Copyright.mp3" type="audio/mp3">  
+    </audio>
   </main>
 
+  <script>
+     function PlayAudio(){
+
+       const audio = document.getElementById("musica");
+     
+        if (audio.paused) {
+      audio.play().catch(error => {
+        console.log("Reproducción bloqueada:", error);
+      });
+    } else {
+      audio.pause();
+    }
+
+     }
+  </script>
 
 </body>
 </html>
