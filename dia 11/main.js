@@ -114,12 +114,13 @@ edad = 28;
     console.log("me quedo en casa");
   }
 
+/*El usuariio va ingresar su fecha de nacimiento dia el mes y el a;o ustedes deberan decirle cuantos dias tieen de vida   nacio el 1 de 
+julio del 2025 15 dias  ustedes deberan tener en cuenta a;os bisiestos y febrero*/ 
 
+/*
 
-// Pide al usuario los datos y los guarda correctamente
-
-    /*    let año = parseInt(prompt("Introduce tu año de nacimiento:"));
-            let dia = parseInt(prompt("Introduce tu día de nacimiento:"));
+        let año = parseInt(prompt("Introduce tu año de nacimiento:"));
+         let dia = parseInt(prompt("Introduce tu día de nacimiento:"));
             let mes = parseInt(prompt("Introduce tu mes de nacimiento:"));
 
             let añoActual = 2025;
@@ -130,19 +131,73 @@ edad = 28;
 
             let mesesVividos = añosVividos * 12;
 
-            let diaaVividos=0;
+            let diaaVividos=0, contador=0;
+
 
 
 
             let esBisiesto = false;
-            if ((año % 4 === 0 && año % 100 !== 0) || año % 400 === 0) {
-            esBisiesto = true;
-            
+
+            if(año==2025){
+
+               mesesVividos= año*mes;
+
+
+            }else{
+                    
+                for(let i=año;i<=añoActual; i++){
+
+                    if ((i % 4 === 0 && i % 100 !== 0) || i % 400 === 0) {
+                    esBisiesto = true; 
+
+                    console.log(i);
+
+                    contador++;
+
+                    
+                    
+                }
+                
+                }
+
             }
+                   
+
+            
+            console.log(contador);
+            cantidadDias=añosVividos*365+contador;
 
             console.log("Has vivido aproximadamente " + añosVividos + " años");
             console.log("Has vivido aproximadamente " + mesesVividos + " meses");
-    */
+            console.log("Has vivido aproximadamente " + cantidadDias + " Dias");
+    
+*/
+
+
+// Solicitar al usuario su fecha de nacimiento
+let dia = parseInt(prompt("Introduce tu día de nacimiento:"));
+let mes = parseInt(prompt("Introduce tu mes de nacimiento (1-12):")) - 1; // JS cuenta meses desde 0
+let año = parseInt(prompt("Introduce tu año de nacimiento:"));
+
+// Crear objeto de fecha de nacimiento
+let fechaNacimiento = new Date(año, mes, dia);
+
+// Obtener la fecha actual
+let hoy = new Date();
+
+// Validación: si fecha de nacimiento es en el futuro
+if (fechaNacimiento > hoy) {
+  alert("Aún no has nacido. Por favor introduce una fecha válida.");
+} else {
+  // Calcular la diferencia en milisegundos el resultado  de restar dos objetos  Date es  en milisegundos por lo tanto tenemos que convertirlo.
+  let diferenciaMs = hoy - fechaNacimiento;
+
+  // Convertir milisegundos a días (1 día = 86400000 ms)
+  let diasVividos = Math.floor(diferenciaMs / (1000 * 60 * 60 * 24));
+
+  alert("Has vivido " + diasVividos + " días.");
+}
+
 
     /*  if (esBisiesto) {
             console.log("Tu año de nacimiento fue bisiesto.");
@@ -154,7 +209,6 @@ edad = 28;
           
 
 
-
 /* Realizar la serie de los numeros pares si el cliente coloca el numero 5
 2,4,6,8,10 si el cliente coloca el numero 3
 2,4,6
@@ -163,6 +217,7 @@ edad = 28;
 let Cantidad = 0;
 
 // Pedir al usuario cuántos pares quiere ver
+
 /*
     let entrada = prompt("¿Cuántos números pares quieres mostrar?");
     Cantidad = parseInt(entrada);
@@ -176,6 +231,8 @@ let Cantidad = 0;
         }
     }
 */
+
+
 /*
 let entrada = prompt("¿Cuántos términos de la serie Fibonacci quieres ver?");
 let n = parseInt(entrada);
@@ -193,6 +250,7 @@ for (let i = 0; i < n; i++) {
 }
 */
 
+/*
 let entrada = prompt("¿Cuántos números primos quieres mostrar?");
 let N = parseInt(entrada);
 
@@ -218,6 +276,6 @@ for (let i=1; cantidad < N; ) {
         divisores = 0;
     }
 }
-
+*/
 
 
