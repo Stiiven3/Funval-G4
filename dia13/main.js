@@ -141,7 +141,7 @@ Menu();
 
 */
 
-
+/*
 
 const sumar = (a, b) => a + b;
 const restar = (a, b) => a - b;
@@ -186,7 +186,40 @@ switch (opcion) {
 }
 
 alert("Resultado: " + resultado);
+*/
 
+let saldo = 0;
 
+function depositar() {
+  const monto = parseFloat(document.getElementById("monto").value);
+  if (monto > 0) {
+    saldo += monto;
+    mostrarMensaje(`Depósito exitoso. Nuevo saldo: $${saldo.toFixed(2)}`, "text-green-600");
+  } else {
+    mostrarMensaje("El monto a depositar debe ser mayor que cero.", "text-red-600");
+  }
+}
+
+function retirar() {
+  const monto = parseFloat(document.getElementById("monto").value);
+  if (monto <= 0 || isNaN(monto)) {
+    mostrarMensaje("El monto a retirar debe ser mayor que cero.", "text-red-600");
+  } else if (monto > saldo) {
+    mostrarMensaje("Saldo insuficiente.", "text-red-600");
+  } else {
+    saldo -= monto;
+    mostrarMensaje(`Retiro exitoso. Nuevo saldo: $${saldo.toFixed(2)}`, "text-green-600");
+  }
+}
+
+function consultarSaldo() {
+  mostrarMensaje(`Saldo actual: $${saldo.toFixed(2)}`, "text-blue-600");
+}
+
+function mostrarMensaje(texto, colorClase) {
+  const mensaje = document.getElementById("mensaje");
+  mensaje.textContent = texto;
+  mensaje.className = `text-lg font-semibold mt-4 ${colorClase}`;
+}
 
 

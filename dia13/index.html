@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuenta Bancaria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
-</body>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded-xl shadow-xl w-full max-w-sm text-center space-y-4">
+    <h2 class="text-2xl font-bold text-blue-600">Cuenta Bancaria</h2>
+    <input
+      type="number"
+      id="monto"
+      placeholder="Ingrese monto"
+      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <div class="space-y-2">
+      <button
+        onclick="depositar()"
+        class="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
+      >
+        Depositar
+      </button>
+      <button
+        onclick="retirar()"
+        class="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600"
+      >
+        Retirar
+      </button>
+      <button
+        onclick="consultarSaldo()"
+        class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+      >
+        Consultar Saldo
+      </button>
+    </div>
+    <p id="mensaje" class="text-lg font-semibold mt-4"></p>
+  </div>
 
-<script defer src="./main.js"> </script>
+  <script defer src="main.js"></script>
+</body>
 </html>
