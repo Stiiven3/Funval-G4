@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="todo"  >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link href="./output.css" rel="stylesheet" />
+  <title>Frontend Mentor | Todo app</title>
+</head>
+
+<body class="min-h-screen dark:bg-gray-900 flex flex-col  ">
+
+  
+    <header>
+      <div class="flex flex-col gap-13 items-center justify-center 
+                  h-[300px] sm:h-[400px] lg:h-[500px] 
+                  w-full bg-no-repeat bg-cover bg-center 
+                  bg-[url('./images/bg-mobile-light.jpg')] 
+                  sm:bg-[url('./images/bg-desktop-light.jpg')] 
+                  dark:bg-[url('./images/bg-mobile-dark.jpg')] 
+                  sm:dark:bg-[url('./images/bg-desktop-dark.jpg')]">
+        
+        <div class="w-[85%] lg:w-[800px] flex justify-between items-center">
+          <h1 class="text-white text-4xl tracking-[10px] font-display font-bold  ">T O D O</h1>
+          <img id="btn" class="cursor-pointer w-6 h-6" src="./images/icon-moon.svg" alt="Toggle theme" />
+        </div>
+
+        <div class="flex flex-col  00 items-center justify-center w-full px-4 mt-8">
+          <div class="bg-white dark:bg-gray-700 w-full max-w-[800px] flex items-center rounded p-5 gap-4 shadow-md">
+            <input class="w-8 h-8  dark:bg-gray-700"  type="radio" disabled />
+            <input class="w-full p-2 outline-none text-gray-700 dark:bg-gray-700 dark:text-white" type="text" placeholder="Create a new todo" />
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+
+  <main class="flex-grow" >
+
+
+
+  
+  </main>
+  
+  <footer class="mt-16  dark:bg-gray-900 py-4 px-4 sm:px-6 flex justify-center gap-6  ">
+    <p class="dark:text-gray-600 text-gray-500 text-center text-2xl mb-18 font-display">Drag and drop to reoder list </p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector("#btn");
+    const html = document.querySelector("#todo");
+
+    btn.addEventListener("click", () => {
+      html.classList.toggle("dark");
+
+      const isDark = html.classList.contains("dark"); // verifica  que esta en modo oscuro
+        if (isDark) {
+        btn.src = "./images/icon-sun.svg";
+        btn.alt = "Light mode";
+      } else {
+        btn.src = "./images/icon-moon.svg";
+        btn.alt = "Dark mode";
+      }
+
+    });
+  </script>
+</body>
+</html>

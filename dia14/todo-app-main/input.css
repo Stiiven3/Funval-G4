@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@tailwind utilities;
+
+.color{
+    
+    background-color:hsl(0, 0%, 98%);
+}
+
+
+@theme {
+  --font-display: "Josefin Sans", "sans-serif"; 
+}
+
+
