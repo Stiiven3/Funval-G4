@@ -58,6 +58,8 @@ Funcionslece=(productos)=>{
     return Primerosvalores;
 }
 
+console.log(Funcionslece(productos));
+
 /****ordenando de mayor a menor****/ 
 
 console.log("*********Ordenar valores*********");
@@ -78,6 +80,7 @@ console.log(productos);
 
 
 console.log("*********Valores reverse*********");
+
 const reversa = productos.reverse();
 
 console.log(reversa);
