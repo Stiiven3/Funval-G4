@@ -50,3 +50,6 @@ for (let index = 0; index < target.length; index++) {
     </div>
   `;
 }
+
+
+/* nuevos cambios para mejor mantenimiento*/
