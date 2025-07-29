@@ -20,3 +20,27 @@ function PlayAudio(){
 
  }
 
+
+ document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const modal = document.getElementById('modal');
+  const cerrarBtn = document.getElementById('cerrarModal');
+const modalContent = document.getElementById('modalContent');
+
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+
+
+    const nombre = document.getElementById('Nombre').value;
+
+ 
+    modalContent.textContent = `${nombre} enviaste un mensaje a Steven Orozco`;
+
+    modal.classList.remove('hidden');
+  });
+
+  cerrarBtn.addEventListener('click', () => {
+    modal.classList.add('hidden');
+  });
+});

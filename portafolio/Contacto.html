@@ -65,7 +65,7 @@
 <div id="login" class="w-[450px] h-99 bg-gray-800 rounded shadow flex flex-col justify-between p-3">
     
     
-    <form class="text-green-500" action="" method="post">
+    <form  id="contactForm" class="text-green-500" action="" method="post">
         <fieldset class="border-4 border-dotted border-green-600 p-5">
             <legend class="px-2 italic -mx-2">Contactame</legend>
              <label   class="text-xs font-bold after:content-['*']   after:text-red-400" for="text">Nombre </label>     
@@ -82,7 +82,7 @@
     <div id="modal" class="fixed inset-0 bg-black/50 flex items-center hidden justify-center">
       <div class="bg-white flex flex-col rounded-2xl p-10 gap-3 relative w-full max-w-md">
         <button id="cerrarModal" class="absolute top-2 right-2 text-xl font-bold">x</button>
-        <h2 class="w-full text-center text-lg font-semibold">Estudiantes</h2>
+        <p id="modalContent" ></p>
 
        
       </div>
