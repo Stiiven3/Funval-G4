@@ -12,17 +12,57 @@
 <body class="bg-gray-900  min-h-screen  flex flex-col" >
 
   <!-- Header -->
-  <header class="flex justify-between items-center px-4 sm:px-6 py-4 bg-gray-800">
+<header class="bg-gray-800">
+  
+  <div class="flex justify-between items-center px-4 sm:px-6 py-4">
     <div class="text-white text-lg sm:text-xl font-semibold">Logo</div>
-    <nav class="hidden lg:block">
-      <ul class="flex space-x-4 sm:space-x-6 text-white font-display text-base sm:text-lg">
-        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#inicio" class="hover:underline">Inicio</a></li>
-        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#Mi" class="hover:underline">Sobre mí</a></li>
-        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a target="_blank" href="./proyecto.html" class="hover:underline">Proyectos</a></li>
-        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl"><a href="#contacto" class="hover:underline">Contacto</a></li>
+
+    <nav class="flex items-center">
+      
+      <ul class="hidden lg:flex space-x-6 text-white font-display text-base sm:text-lg">
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+          <a href="#inicio" class="hover:underline">Inicio</a>
+        </li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+          <a href="#Mi" class="hover:underline">Sobre mí</a>
+        </li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+          <a target="_blank" href="./proyecto.html" class="hover:underline">Proyectos</a>
+        </li>
+        <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+          <a href="./Contacto.html" class="hover:underline">Contacto</a>
+        </li>
       </ul>
+
+    
+      <button id="menu-btn" class="lg:hidden p-2 ml-4 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-green-400">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </nav>
-  </header>
+  </div>
+
+  
+  <div id="mobile-menu" class=" lg:hidden hidden px-4 pb-4">
+    <ul class="space-y-4 text-white text-center font-display text-base">
+      <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+        <a href="#inicio" class="hover:underline">Inicio</a>
+      </li>
+      <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+        <a href="#Mi" class="hover:underline">Sobre mí</a>
+      </li>
+      <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+        <a target="_blank" href="./proyecto.html" class="hover:underline">Proyectos</a>
+      </li>
+      <li class="hover:bg-green-700 px-4 py-2 rounded-3xl">
+        <a href="./Contacto.html" class="hover:underline">Contacto</a>
+      </li>
+    </ul>
+  </div>
+  
+</header>
+
 
   <!-- Hero Section -->
   <main class="flex-grow flex flex-col" >
@@ -59,7 +99,7 @@
         <div class="bg-gray-950 text-green-400 font-display text-base sm:text-lg lg:text-2xl border-4 border-green-500 p-4 w-full max-w-2xl rounded flex md:h-[300px]">
           <div class="my-auto">
             <p class="leading-relaxed">
-              Soy estudiante de la Licenciatura en Informática, apasionado por la programación . También soy artista plástico; si quieres 
+              Soy estudiante de programacion,También soy artista plástico; si quieres 
               ver algunas de mis obras, haz clic aquí:
               <a href="https://www.instagram.com/stiiwarsog/" class="inline-block ml-1 text-white hover:text-green-400">
                 <svg class="inline w-6 h-6 lg:w-8 lg:h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -82,9 +122,9 @@
 
          <div class="text-2xl text-center mt-10 w-full grid grid-cols-2 md:grid-cols-5 place-items-center gap-14 text-white " > 
                 
-                <div class="bg-gray-700 border-2  border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80  lg:animate-bounce  md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto  " src="./Img/html5.png" alt=""> <p class="font-display mt-4">HTML</p></div>
+                <div class="bg-gray-700 border-2  border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80  lg:animate-bounce  md:animate-pulse"><img class="w-full h-full  rounded-full  object-contain  mx-auto  " src="./Img/html5.png" alt=""> <p class="font-display mt-4"> HTML </p></div>
                 <div class="bg-gray-700 border-2 border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto  " src="./Img/cssCirculo.webp" alt=""><p class="font-display mt-4">CSS</p> </div>
-                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto   " src="./Img//tailwind.png" alt=""><p class="font-display mt-4 ">Tailwind</p></div>
+                <div class="bg-gray-700 border-2 border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto   " src="./Img//tailwind.png" alt=""><p class="font-display mt-4 ">Tailwind</p><span class="hidden hover:block" ></span></div>
                 <div class="bg-gray-700 border-2 border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto   " src="./Img/git.png" alt=""><p class="font-display mt-4 ">GIT</p></div>
                 <div class="bg-gray-700 border-2 border-green-600 rounded-full size-15 lg:size-25 shadow-lg shadow-cyan-500/80 p-1 lg:animate-bounce md:animate-pulse"><img class="w-full h-full rounded-full  object-contain  mx-auto  " src="./Img/hub.jpg" alt=""><p class="font-display mt-4">GitHub</p></div>
            
@@ -137,20 +177,8 @@
     </footer>
 
 
-  <script>
-     function PlayAudio(){
-
-       const audio = document.getElementById("musica");
-     
-        if (audio.paused) {
-      audio.play().catch(error => {
-        console.log("Reproducción bloqueada:", error);
-      });
-    } else {
-      audio.pause();
-    }
-
-     }
+  <script defer src="./Funciones.js" >
+    
   </script>
 
 </body>
