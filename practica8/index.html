@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tres en Raya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f172a] flex items-center justify-center h-screen">
+  <div class="flex flex-col items-center space-y-8">
+
+    <!-- Turno y botón reiniciar -->
+    <div class="flex items-center justify-between w-full max-w-[300px] px-4 text-xl">
+      <div class="flex space-x-2">
+        <div class="w-6 h-6 bg-cyan-400 rounded-full"></div>
+        <div class="w-6 h-6 bg-yellow-400 rounded-full"></div>
+      </div>
+      <button class="bg-gray-700 text-white text-lg px-5 py-2 rounded">TURN</button>
+      <button class="bg-gray-600 text-white px-4 py-2 rounded text-xl">⟲</button>
+    </div>
+
+    <!-- Tablero -->
+    <div class="grid grid-cols-3 gap-5">
+      <!-- Cada celda -->
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-white font-bold">x</div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-cyan-400 font-bold">o</div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-yellow-400 font-bold"></div>
+      
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-cyan-400 font-bold"></div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-yellow-400 font-bold">x</div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-cyan-400 font-bold"></div>
+      
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-white font-bold"></div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-yellow-400 font-bold"></div>
+      <div class="w-28 h-28 bg-gray-800 rounded flex items-center justify-center text-5xl text-cyan-400 font-bold"></div>
+    </div>
+
+    <!-- Marcadores -->
+    <div class="flex space-x-6 mt-6 text-center text-lg">
+      <div class="bg-cyan-500 text-white px-6 py-3 rounded-xl">
+        <div class="text-sm font-bold">X (YOU)</div>
+        <div class="text-2xl font-bold">14</div>
+      </div>
+      <div class="bg-gray-300 text-gray-800 px-6 py-3 rounded-xl">
+        <div class="text-sm font-bold">TIES</div>
+        <div class="text-2xl font-bold">32</div>
+      </div>
+      <div class="bg-yellow-400 text-black px-6 py-3 rounded-xl">
+        <div class="text-sm font-bold">O (CPU)</div>
+        <div class="text-2xl font-bold">11</div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>
