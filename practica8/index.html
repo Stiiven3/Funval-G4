@@ -5,55 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tres en Raya</title>
   <link rel="stylesheet" href="./output.css">
+
+  s
  
 </head>
 <body class="bg-[#0f172a] flex items-center justify-center min-h-screen p-4">
 
   <div class="flex flex-col items-center space-y-8 max-w-md w-full">
 
-    <!-- Turno y botón reiniciar -->
     <div class="flex items-center justify-between w-full px-4 text-lg sm:text-xl">
       <div class="flex space-x-2">
         <div class="w-5 h-5 sm:w-6 sm:h-6 bg-cyan-400 rounded-full"></div>
         <div class="w-5 h-5 sm:w-6 sm:h-6 bg-yellow-400 rounded-full"></div>
       </div>
-      <button class="bg-gray-700 text-white text-sm sm:text-lg px-3 sm:px-5 py-1 sm:py-2 rounded">TURN</button>
-      <button class="bg-gray-600 text-white px-3 sm:px-4 py-1 sm:py-2 rounded text-lg">⟲</button>
+      <button id="turno" class="bg-gray-700 text-white text-sm sm:text-lg px-3 sm:px-5 py-1 sm:py-2 rounded">TURN</button>
+      <button id="reinicio" class="bg-gray-600 text-white px-3 sm:px-4 py-1 sm:py-2 rounded text-lg">⟲</button>
     </div>
 
-    <!-- Tablero -->
     <div class="grid grid-cols-3 gap-3 sm:gap-5 w-full max-w-md">
-      <!-- Cada celda -->
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-white font-bold">x</div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold">o</div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold"></div>
+      <div id="Celda0" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-white font-bold"></div>
+      <div id="Celda1" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
+      <div id="Celda2" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold"></div>
 
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold">x</div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
+      <div id="Celda3" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
+      <div id="Celda4" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold"></div>
+      <div id="Celda5" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
 
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-white font-bold"></div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold"></div>
-      <div class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
+      <div id="Celda6" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-white font-bold"></div>
+      <div id="Celda7" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-yellow-400 font-bold"></div>
+      <div id="Celda8" class="w-full aspect-square bg-gray-800 rounded flex items-center justify-center text-4xl sm:text-5xl text-cyan-400 font-bold"></div>
     </div>
 
-    <!-- Marcadores -->
     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 mt-6 w-full justify-center text-center text-lg">
       <div class="bg-cyan-500 text-white px-6 py-3 rounded-xl flex flex-col">
         <div class="text-sm sm:text-base font-bold">X (YOU)</div>
-        <div class="text-2xl sm:text-3xl font-bold">14</div>
+        <div class="text-2xl sm:text-3xl font-bold"></div>
       </div>
       <div class="bg-gray-300 text-gray-800 px-6 py-3 rounded-xl flex flex-col">
         <div class="text-sm sm:text-base font-bold">TIES</div>
-        <div class="text-2xl sm:text-3xl font-bold">32</div>
+        <div class="text-2xl sm:text-3xl font-bold"></div>
       </div>
       <div class="bg-yellow-400 text-black px-6 py-3 rounded-xl flex flex-col">
         <div class="text-sm sm:text-base font-bold">O (CPU)</div>
-        <div class="text-2xl sm:text-3xl font-bold">11</div>
+        <div class="text-2xl sm:text-3xl font-bold"></div>
       </div>
     </div>
 
   </div>
 
 </body>
+<script defer src="./main.js"></script>
 </html>
