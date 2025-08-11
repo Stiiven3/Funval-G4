@@ -17,7 +17,7 @@ let juegoTerminado = false;
 
 const celdas = [];
 for(let i=0; i<9; i++) {
-  celdas.push(document.querySelector(`#Celda${i}`));
+  celdas.push(document.querySelector(`#Celda${i}`)); // recorre los div y sus subindice
 }
 
 
@@ -67,7 +67,7 @@ function maquinaJuega(){
     for(let j=0; j<3; j++){
       if(matriz[i][j] === 0){
         matriz[i][j] = 2;
-        let index = i*3 + j;
+        let index = i*3 + j;  // [1][2]
         dibujarSimbolo(celdas[index], 'O');
         return;
       }
