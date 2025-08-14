@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body class="dark:bg-gray-800">
-    <header class=" dark:bg-gray-800 flex items-center justify-around py-3 bg-gray-100">
+    <header class=" dark:bg-gray-800 flex items-center justify-around py-3 bg-green-800">
       <div class="flex items-center justify-center gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -65,8 +65,8 @@
           />
         </svg>
         
-        <img src="./svg/dog-head-profile-svgrepo-com.svg" alt="" class="h-11 dark: invert" />
-        <button id="btn" class=" dark:bg-gray-800 dark:text-white dark:hover:bg-green-700 bg-green-500 w-20 h-15 hover:bg-amber-100 cursor-pointer">Cambio</button>
+        <img src="./svg/dog-head-profile-svgrepo-com.svg" alt="" class="h-11  dark: invert" />
+        <button id="btn" class=" dark:bg-green-900 dark:text-white dark:hover:bg-green-700 bg-green-500 w-20 h-15 hover:bg-amber-100 cursor-pointer">Cambio</button>
       </div>
     </header>
     <main class="w-full">
@@ -163,9 +163,10 @@
         </div>
       </div>
       <div class="p-8 contenedor-formulario">
-        <form class="max-w-md mx-auto">
-          <div class="grid md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-5 group">
+        
+        <form class="max-w-md mx-auto ">
+          <div class="grid md:grid-cols-1 md:gap-6  ">
+            <div class="relative z-0 w-full mb-5 group md: ">
               <input
                 type="text"
                 name="floating_first_name"
@@ -181,7 +182,8 @@
               >
             </div>
           </div>
-          <div class="grid md:grid-cols-2 md:gap-6">
+
+          <div class="grid md:grid-cols-1 md:gap-6">
             <div class="relative z-0 w-full mb-5 group">
               <input
                 type="tel"
@@ -222,20 +224,26 @@
           </button>
         </form>
       </div>
-      <div
-        class="contenedor-qr flex flex-col gap-3 items-center justify-center"
+
+  <div class=" md:flex md:flex-row-reverse md:gap-30 md:justify-center" >
+
+    <div
+        class="contenedor-qr flex flex-col  gap-3 items-center justify-center"
       >
-        <h2 class="text-green-900 font-extrabold text-3xl">
+        <h2 class="text-green-900 dark:text-green-600 font-extrabold text-3xl">
           PUEDES DONAR A ESTE QR
         </h2>
         <img src="./svg/Commons_QR_code.webp" alt="" />
       </div>
+
       <div
         class="contenedor-pagos flex flex-col items-center justify-center mt-4 gap-4"
       >
-        <h2 class="text-green-900 font-extrabold text-xl">
+        <h2 class="text-green-900 dark:text-green-600 font-extrabold text-xl">
           tambien puedes ayudarnos atraves de
         </h2>
+
+        
         <div
           class="w-[300px] p-2 aspect-square rounded-lg shadow flex flex-col items-center justify-center gap-2 bg-slate-50"
         >
@@ -359,7 +367,16 @@
             />
           </label>
         </div>
+
+
       </div>
+
+
+  </div>      
+      
+
+
+
     </main>
 
 

@@ -1,4 +1,24 @@
 export const target = [
+
+  {
+    img: "./Img/Super.png",
+    nombreP: "Super mercado",
+    link: "https://stiiven3.github.io/TiendaOnline/",
+  },
+
+   {
+    img: "./Img/tic.png",
+    nombreP: "Tic tac Toe",
+    link: "https://stiiven3.github.io/Funval-G4/practica8/",
+  },
+
+  {
+    img: "./Img/Team-page.png",
+    nombreP: "Team-Page",
+    link: "team-page-iwwu.vercel.app/",
+  },
+
+
   {
     img: "./Img/One piece.png",
     nombreP: "Tribute page",
@@ -20,17 +40,9 @@ export const target = [
     link: "https://stiiven3.github.io/Technical-documentacion-page/Documention%20page.html",
   },
 
-   {
-    img: "./Img/tic.png",
-    nombreP: "Tic tac Toe",
-    link: "https://stiiven3.github.io/Funval-G4/practica8/",
-  },
+  
 
-   {
-    img: "./Img/Super.png",
-    nombreP: "Super mercado",
-    link: "https://stiiven3.github.io/TiendaOnline/",
-  },
+   
 ];
 
 let targeta = document.querySelector("#contenedor-Targeta");
