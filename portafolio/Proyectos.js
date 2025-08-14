@@ -55,6 +55,9 @@ let targeta = document.querySelector("#contenedor-Targeta");
 
 export function Proyectos(target) {
   for (let index = 0; index < target.length; index++) {
+    // Comprobar qué está llegando
+    console.log("Link en índice", index, ":", JSON.stringify(target[index].link));
+
     targeta.innerHTML += `
       <div class="bg-gray-800 rounded-2xl shadow-xl overflow-hidden flex flex-col items-center p-4 hover:scale-105 shadow-cyan-500/50 transition-transform duration-300">
         <img
@@ -68,7 +71,8 @@ export function Proyectos(target) {
         <a
           class="w-full flex items-center justify-center mt-4"
           target="_blank"
-          href="${target[index].link}"
+          rel="noopener noreferrer"
+          href="${target[index].link.trim()}"
         >
           <button
             class="bg-black dark:bg-green-800 cursor-pointer hover:bg-green-400 text-yellow-400 p-3 rounded-xl w-[80%] text-xl font-bold flex items-center justify-center gap-2 hover:text-black transition-colors duration-300"
@@ -80,6 +84,7 @@ export function Proyectos(target) {
     `;
   }
 }
+
 
 
 
