@@ -18,6 +18,12 @@ export const target = [
     link: "team-page-iwwu.vercel.app/",
   },
 
+  {
+    img: "./Img/perrito.png",
+    nombreP: "Landing-page",
+    link: "https://stiiven3.github.io/Funval-G4/dia9/ejercicio/",
+  },
+
 
   {
     img: "./Img/One piece.png",
