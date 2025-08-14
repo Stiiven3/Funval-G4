@@ -15,7 +15,7 @@ export const target = [
   {
     img: "./Img/Team-page.png",
     nombreP: "Team-Page",
-    link: "team-page-iwwu.vercel.app/",
+    link: "https://team-page-iwwu.vercel.app/",
   },
 
   {
